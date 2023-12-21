@@ -27,10 +27,11 @@ A continuación, tendrás que instalar el servidor web Apache, MariaDB, PHP y ot
 
      sudo apt-get install apache2 mariadb-server php libapache2-mod-php php-common php-gmp php-curl php-intl php-mbstring php-xmlrpc php-mysql php-gd php-xml php-cli php-zip curl git gnupg2 -y
 
+[![SAVE-20231221-134945.jpg](https://i.postimg.cc/kgP1zWWg/SAVE-20231221-134945.jpg)](https://postimg.cc/qzQxChmP)
 Después de instalar todos los paquetes, edita el archivo php.ini y cambia algunos ajustes recomendados:
 
     sudo nano /etc/php/7.4./apache2/php.ini
-
+[![SAVE-20231221-140239.jpg](https://i.postimg.cc/4yd6rxxP/SAVE-20231221-140239.jpg)](https://postimg.cc/BLrPFsDP)
 Cabe recalcar que la version puede variar `/php/7.4./` dependiendo del sistema operativo.
 Continuando ahora agrega las siguientes líneas:
 
@@ -59,7 +60,7 @@ Posteriormente, vacía los privilegios y sal de MariaDB con el siguiente comando
     MariaDB [(none)]> FLUSH PRIVILEGES;
     MariaDB [(none)]> EXIT;
 En este punto, tu base de datos MariaDB está configurada.
-
+[![SAVE-20231221-140255.jpg](https://i.postimg.cc/kGg3VznG/SAVE-20231221-140255.jpg)](https://postimg.cc/ftpgpHSQ)
 ### PASO 4: Instalar TYPO3 CMS
 En primer lugar, tendrás que descargar la última versión de TYPO3 desde su sitio web oficial. Puedes utilizar el comando curl para descargarla: 
 
