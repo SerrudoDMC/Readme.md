@@ -81,17 +81,17 @@ A continuación, crea un archivo de configuración del host virtual de Apache pa
     sudo nano /etc/apache2/sites-available/typo3.conf
 Añade las siguientes líneas:
 
-       <VirtualHost *:80>
-             ServerAdmin admin@example.com
-             DocumentRoot /var/www/html/typo3
-             ServerName typo3.example.com
-             <Directory /var/www/html/typo3>
-                Options +FollowSymlinks
-                AllowOverride All
-                Require all granted
-             </Directory>
-         ErrorLog ${APACHE_LOG_DIR}/error.log
-         CustomLog ${APACHE_LOG_DIR}/access.log combined
+    <VirtualHost *:80>
+        ServerAdmin admin@example.com
+        DocumentRoot /var/www/html/typo3
+        ServerName typo3.example.com
+        <Directory /var/www/html/typo3>
+        Options +FollowSymlinks
+        AllowOverride All
+        Require all granted
+        </Directory>
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
     </VirtualHost>
 Guarda y cierra el archivo y luego habilita el archivo de configuración del host virtual y el módulo de reescritura con el siguiente comando:
 
