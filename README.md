@@ -18,6 +18,8 @@ En primer lugar, se recomienda actualizar los paquetes de tu sistema con la últ
     sudo su
     apt-get update -y
 
+[![SAVE-20231221-134212.jpg](https://i.postimg.cc/3ND0H42K/SAVE-20231221-134212.jpg)](https://postimg.cc/gLm2V0M5) 
+
 Una vez que todos los paquetes estén actualizados, puedes pasar al siguiente paso.
 
 ###  PASO 2: Instalar el servidor LAMP
